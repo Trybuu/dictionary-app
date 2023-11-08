@@ -1,0 +1,69 @@
+.result-view{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.result{
+
+    &__main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.meanings{
+    padding: 2rem 0;
+
+    &__meaning{
+        margin-top: 2rem;
+        color: gray;
+        font-weight: 400;
+    }
+
+    &__list{
+        padding: 1rem;
+    }
+}
+
+.part-of-speech{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    &__title{
+        padding-right: 1rem;
+    }
+    &__stripe{
+        height: 2px;
+        width: 100%;
+        background-color: $search-bar-color;
+    }
+}
+
+.synonyms{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &__title{
+        margin-right: 2rem;
+    }
+    &__synonym{
+        color: blueviolet;
+        margin-right: .5rem;
+    }
+}
+
+.source{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 1rem;
+    &__link{
+        margin-top: .5rem;
+        margin-right: .5rem;
+        word-break: break-all;
+        color: gray;
+    }
+}

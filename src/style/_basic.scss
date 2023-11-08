@@ -1,0 +1,97 @@
+// font-family: 'Lora', serif;
+// font-family: 'Poppins', sans-serif;
+$search-bar-color: hsl(0, 0%, 96%);
+
+$background-day-color: hsl(0, 0%, 100%);
+$font-day-color: hsl(0, 0%, 0%);
+
+$background-night-color: #1F1D36;
+$font-night-color:hsl(0, 0%, 100%);
+
+// ------------------ DARK MODE ------------------------
+body.night{
+    background-color: #111;
+    color: #fff;
+}
+
+body.night{
+    .search-bar{
+        background-color: #333;
+        input{
+            color: #fff;
+        }
+    }
+    .fonts-options{
+        background-color: #111;
+        border-color: #333;
+    }
+    button{
+        color: #fff;
+    }
+
+    .synonyms__synonym{
+        color: rgb(243, 139, 255);
+    }
+
+    .darkmode{
+        border-color: #333;
+    }
+
+    .darkmode__switch{
+        background-color: #333;
+        border-color: #333;
+    }
+
+    .darkmode__circle{
+        background-color: rgb(243, 139, 255);
+    }
+
+    .part-of-speech__stripe{
+        background-color: #333;
+    }
+}
+// -------------------------------------------------
+// --------------- CHANGE FONT ---------------------
+    body.sans-serif {
+        font-family: 'Poppins', sans-serif;
+        button, a, input{
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+    body.serif{
+        font-family: 'Lora', serif;
+        button, a, input{
+            font-family: 'Lora', serif;
+        }
+    }
+// -------------------------------------------------
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    // font-family: 'Lora', serif;
+    // font-family: 'Poppins', sans-serif;
+}
+
+button, a, input{
+    font-family: 'Lora', serif;
+    // font-family: 'Poppins', sans-serif;
+}
+
+.button{
+    cursor: pointer;
+    &--play{
+        border-radius: 50%;
+        border: none;
+        background-image: linear-gradient(rgb(243, 139, 255), rgb(219, 89, 233));
+        height: 4rem;
+        width: 4rem;
+        transition: ease .2s;
+        &:hover{
+            background-image: linear-gradient(rgb(243, 139, 255), rgb(243, 139, 255),);
+        }
+    }
+}

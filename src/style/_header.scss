@@ -1,0 +1,109 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 2rem 0 2rem;
+    &__settings{
+        display: flex;
+        justify-content: stretch;
+        height: 4rem;
+        width: 200px;
+    }
+}
+
+.fonts-container{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.fonts{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding-right: .5rem;
+    cursor: pointer;
+
+    &__active-font{
+        margin-right: .5rem;
+    }
+}
+
+.fonts--active .fonts-options{
+    display: block;
+}
+
+.fonts-options{
+    box-sizing: content-box;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-right: solid 2px $search-bar-color;
+    border-bottom: solid 2px $search-bar-color;
+    &__list{
+        list-style: none;
+        padding: 1rem .5rem;
+        
+    }
+    &__list-el{
+        margin-bottom: 1rem;
+        
+        &__btn{
+            width: 100%;
+            font-size: 1rem;
+            text-align: left;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+.darkmode{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    border-left: 2px solid $search-bar-color;
+    padding-left: .5rem;
+    &__switch{
+        box-sizing: content-box;
+        position: relative;
+        width: 60%;
+        height: 1.2rem;
+        border: 1px solid white;
+        border-radius: 1rem;
+        background-color: $search-bar-color;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    &--active &__circle{
+        left: calc(100% - 1.2rem);
+    }
+
+    &__moon{
+        height: 1rem;
+    }
+    &__circle{
+        box-sizing: content-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 1.2rem;
+        width: 1.2rem;
+        border-radius: 50%;
+        background-color: #464646;
+        transition: .2s ease;
+    }
+}
